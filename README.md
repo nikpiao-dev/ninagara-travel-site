@@ -1,6 +1,13 @@
 # group-project-1
 First Group Project with wcoding fsi-23
 
+## Main Files:
+
+- groupv4.html
+- groupv2.js
+- groupv3.css
+
+
 # Ninagara Travel Site
 
 Welcome to Ninagara Travel Site project repository! This project is a group effort aimed at creating a travel website using HTML, CSS, and JavaScript.
