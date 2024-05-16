@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    height: 100vh;
+}
+
+.card-container {
+    height: 100vh;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    height: 300px;
+
+
+    /* border: 2px solid blue; */
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    /* height: 400px; */
+    margin: 2em;
+
+
+    border: 1px solid #000;
+}
+
+.card-bottom-content {
+  text-align: center;
+  width: 700px;
+  /* height: 400px; */
+
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+  /* gap: 4em; */
+
+  /* border: 2px solid purple; */
+}
+
+
+form {
+    margin: 2em auto;
+}
+
+form input {
+    margin-bottom: 1rem;
+}
+
+
+input[type="text"] {
+    padding: 0.8em 1.4em;
+}
+
+
+textarea 
+{
+    margin-bottom: 1rem;
+    height: 100px;
+    /* resize: vertical; */
+}
+
+
+[type="submit"] 
+{
+    width: 100%;
+    background-color: #121215d0;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    transition: all 0.5s;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+form a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #121215d0;
+    background-color: #121215d0;
+    padding: 0.6em;
+    border-radius: 10px;
+    margin-top: 0.8em;
+}
+
+form a:hover {
+    background-color: #ffd194;
+    color: #121215d0;
+    transition: all 0.5s;
+}

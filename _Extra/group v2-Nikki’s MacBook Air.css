@@ -1,0 +1,557 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+
+
+/* Animated overlay navbar */
+
+
+/* styling the header */
+
+.nav-header {
+    font-family: 'Playfair Display', serif;
+    /* background-color: hsl(35, 71%, 48%); */
+    /* background: linear-gradient(to right, rgba(106, 17, 203, 0.9), rgba(37, 117, 252, 0.9)); */
+    background: linear-gradient(to right, #ffd194, #D1913C);
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    border-bottom: 2px solid rgb(243, 202, 127);
+}
+
+/* styling the <nav> element */
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.4s;  /* 0.5 second transition effect to slide in or slide down the overlay */ 
+}
+
+/* Position the content inside the overlay */
+.navbar-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.navbar a {
+    padding: 15px;
+    font-size: 30px;
+    display: block;
+    transition: 0.3s;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #D1913C;
+}
+
+.navbar a:hover, .navbar:focus {
+    color: #D1913C;
+}
+
+.navbar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.btn-content {
+    padding: 16px;
+    background-color: transparent;
+}
+
+.open-btn {
+    font-size: 1.8em;
+    color: #fff;
+    border: none;
+    background-color: #D1913C;
+    cursor: pointer;
+}
+
+
+
+/* main content page */
+.main-content {
+    height: 100vh;
+    height: 100dvh;
+    /* background-image: linear-gradient(to right, #FFD194, #D1913C); */
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+    padding-top: 4em;
+    /* border: 2px solid red; */
+}
+
+.topPage {
+    height: 40vh;
+    height: 40dvh;
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ffd194;
+
+    /* border: 2px solid blue; */
+    overflow: hidden;
+}
+
+
+.topPage-head {
+    border: 2px solid hsl(34, 62%, 53%);
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(#ebebeb, #fbf8f8);
+}
+
+.topPage-head:hover {
+    /* background: linear-gradient(to right, #ffd194, #D1913C 90%); */
+    background-image: linear-gradient(#ebebeb, #fbf8f8);
+    color:  hsl(34, 62%, 53%);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.8s ease-in-out;
+    letter-spacing: 0.5em;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    color: #000;
+    text-align: center;
+    width: 15em;
+    height: 3.5em;
+    letter-spacing: 0.3em;
+}
+
+input[type="text"]:hover { 
+    color: #fff;
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+    border-radius: 15px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.button .btn {
+    padding: 1.2em 6em;
+    color:#000;
+    background-color: #fff;
+    border: 2px solid hsl(39, 100%, 63%);
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+
+.button .btn:hover {
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.8s ease-in;
+    letter-spacing: 0.5em;
+    cursor: pointer;
+}
+
+
+.middlePage {
+    /* border: 2px solid red; */
+    height: 100vh;
+    height: 100vh;
+    /* background-image: linear-gradient(to right, #FFD194, #D1913C); */
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+}
+
+.middlePage h3 {
+    color: #000;
+}
+
+
+/* .bottomPage {
+    border: 2px solid purple;
+} */
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 550px;
+
+    /* border: 2px solid red; */
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3 {
+    height: 500px;
+    width: 450px;
+    border-radius: 10px;
+    /* border: 2px solid green; */
+    color: #000;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: hsl(33, 100%, 54%);
+
+}
+
+/* middle-page*/
+.middlePage {
+    border-bottom: 2px solid #ffd194;
+}
+
+.middlePage h3 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.cards .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    color: #fff;
+}
+
+.card-content h4 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.card-content h4, 
+.card-content p {
+    color: #fff;
+}
+.cards .card1 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url('./images/LA_Top\ Dest_Pic.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards .card2 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url('./images/NY_Top\ Dest_Pic.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards .card3 {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url('./images/Brazil_Top\ Dest_Pic.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-content a {
+     font-weight: 800;
+     font-size: 1.2em;
+     border: 2px solid hsl(39, 94%, 55%);
+     padding: 0.8em;
+}
+
+.card-content a:hover {
+    background-color: hsl(39, 81%, 48%);
+    color: #fff;
+}
+
+
+
+/* bottom - promo */
+
+
+.bottomPage {
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+    border-bottom: 2px solid #ffd194;
+    overflow: hidden;
+}
+
+.bottomPage .h3 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 4em;
+    margin: 0.25em 0;
+    margin-bottom: 1.2em;
+}
+
+/* .promoCard-content h4,
+.promoCard-content p {
+    text-align: center;
+}
+
+.promoCard-content a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #D1913C;
+    padding: 0.2em 2em;
+    border-radius: 20px;
+}
+
+.promoCard-content a:hover {
+    color: #fff;
+    background-color:#D1913C;
+    letter-spacing: 0.2em;
+} */
+
+.promoCards {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 2em 4em;
+}
+
+.promoCard {
+    /* border: 3px solid turquoise; */
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1em; */
+    text-align: center;
+    /* box-shadow: 1px 1px 30px; */
+    border-radius: 20px 20px 0 0;
+}
+
+.promoCard-img {
+    background-color: rgb(243, 202, 127);
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 1.2em;
+}
+
+
+.promoCard1 .promoCard-img img {
+    width: 350px;
+    height: 200px;
+}
+
+.promImg {
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* styles for info section, social media and copyright */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+}
+
+.info-section {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(to right, #ffd194, #D1913C 90%); */
+    
+    /* border: 2px solid red; */
+}
+
+.icons-content {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2em 2em;
+    /* border: 2px solid green; */
+}
+
+.icons-content .icons li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 0.8em;
+}
+
+.icons-content .icons a .fa-brands {
+    text-align: center;
+    color: #000;
+    background: none;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.icons-content span {
+    color: #000;
+    font-weight: 700;
+    font-style: oblique;
+    text-transform: uppercase;
+}
+
+.icons-content .icons a .fa-brands:hover {
+    background-color: none;
+    color: hsl(70, 100%, 57%);
+}
+
+.icons-content .icon-head {
+    font-weight: 700;
+}
+
+.icons-content .icons .fa-brands {
+    padding: 0 0.125em;
+    list-style: none;
+}
+
+
+.copyright {
+    height: 10vh;
+    height: 10dvh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffd194, #D1913C 90%);
+}
+
+.copyright {
+   text-align: center;
+}
+
+.copyright a {
+    font-size: 0.9em;
+    text-decoration: none;
+    font-weight: 800;
+    color: hsl(0, 13%, 8%);
+}
+
+.copyright span {
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(0, 13%, 8%);
+}
+
+.copyright span:hover {
+    color: hsl(70, 100%, 57%);
+    cursor: pointer;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright a:hover {
+    color: hsl(70, 100%, 57%);
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 0.4em;
+}
+
+
+
+/* When the height of the screen is less than 450 pixels, 
+change the font-size of the links and position the close button again,
+ so they don't overlap */
+
+@media screen and (max-width: 500px) {
+    .navbar {font-size: 20px}
+    .navbar .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+
+    .topPage-head {
+        width: 300px;
+    }
+
+    .middlePage h3 {
+        font-size: 30px;
+        border: 3px solid red;
+    }
+
+    .bottomPage h3 {
+        font-size: 1.8em;
+    }
+
+    .cards .card1,
+    .cards .card2,
+    .cards .card3 {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
+    /* border: 2px solid green; */
+    color: #000;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        /* height: 600px; */
+    
+        /* border: 2px solid red; */
+    }
+
+    .card-content h4 {
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .card-content {
+        border: 5px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .middlePage {
+        height: 100vh;
+    }
+
+  }
