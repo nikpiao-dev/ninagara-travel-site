@@ -1,6 +1,8 @@
 # group-project-1
 First Group Project with wcoding fsi-23
 
+![Project Demo](preview.gif)
+
 ## Main Files:
 
 - groupv4.html
